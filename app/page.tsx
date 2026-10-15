@@ -44,7 +44,6 @@ export default function HomePage() {
         <Hero
           onExploreCollections={() => scrollToSection('collections')}
           onInquireClick={() => scrollToSection('contact')}
-          onSelectHotspotProduct={(productName) => setContactSubject(productName)}
         />
 
         {/* Featured Collections Introduction */}
