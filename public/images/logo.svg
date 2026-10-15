@@ -1,0 +1,37 @@
+<svg width="280" height="56" viewBox="0 0 280 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Luxurious Artisanal Monogram Emblem (44x44) -->
+  <g transform="translate(6, 6)">
+    <!-- Outer Octagonal / Scalloped Heirloom Border -->
+    <rect x="2" y="2" width="40" height="40" rx="20" stroke="#E5DFD4" stroke-width="1.2" fill="#FAF8F5"/>
+    <rect x="5" y="5" width="34" height="34" rx="17" stroke="#A62626" stroke-width="0.8" stroke-dasharray="2.5 1.5" fill="none" opacity="0.85"/>
+    
+    <!-- Shuttle / Weaving Needle Silhouette in Gold-Brass -->
+    <path d="M12 22C12 22 17 12 22 12C27 12 32 22 32 22C32 22 27 32 22 32C17 32 12 22 12 22Z" fill="#F4EFE6" stroke="#9C928C" stroke-width="0.8"/>
+    <ellipse cx="22" cy="22" rx="3" ry="1.5" fill="#A62626"/>
+
+    <!-- Regal Calligraphic Serif M -->
+    <!-- Left Stem with flourish serif -->
+    <path d="M14 29V17M12 17H16M12 29H16.5" stroke="#24201D" stroke-width="1.8" stroke-linecap="round"/>
+    <!-- Diagonal Peaks meeting at center with crimson thread loop -->
+    <path d="M15 17L22 25L29 17" stroke="#A62626" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- Right Stem with flourish serif -->
+    <path d="M29 17V29M27 29H31.5M27 17H31" stroke="#24201D" stroke-width="1.8" stroke-linecap="round"/>
+
+    <!-- Small artisan needle dot -->
+    <circle cx="22" cy="7.5" r="1.5" fill="#A62626"/>
+    <circle cx="22" cy="36.5" r="1.5" fill="#A62626"/>
+  </g>
+
+  <!-- High-Craft Wordmark Lockup -->
+  <!-- "TRULY" in luxury editorial serif -->
+  <text x="62" y="28" font-family="'Cormorant Garamond', 'Playfair Display', Georgia, serif" font-size="22" font-weight="600" letter-spacing="0.2em" fill="#24201D">TRULY</text>
+  
+  <!-- Crimson Highlight "M" -->
+  <text x="175" y="28" font-family="'Cormorant Garamond', 'Playfair Display', Georgia, serif" font-size="22" font-weight="700" letter-spacing="0.1em" fill="#A62626">M</text>
+
+  <!-- Tagline with subtle diamond separators -->
+  <text x="62.5" y="42" font-family="'Plus Jakarta Sans', system-ui, -apple-system, sans-serif" font-size="7.5" font-weight="600" letter-spacing="0.26em" fill="#8C7E72">STORIES CRAFTED BY HAND</text>
+  
+  <!-- Delicate accent hairline -->
+  <line x1="62.5" y1="46" x2="225" y2="46" stroke="#A62626" stroke-width="0.75" stroke-opacity="0.3"/>
+</svg>
