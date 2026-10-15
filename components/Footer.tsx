@@ -6,6 +6,7 @@ import { Mail, ArrowRight, MapPin } from 'lucide-react';
 export function Footer() {
   const [newsletterEmail, setNewsletterEmail] = useState('');
   const [subscribed, setSubscribed] = useState(false);
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? '';
 
   const handleSubscribe = (e: React.FormEvent) => {
     e.preventDefault();
@@ -23,7 +24,7 @@ export function Footer() {
             <div className="flex items-center">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
-                src="/images/logo-white.svg"
+                src={`${basePath}/images/logo-white.svg`}
                 alt="Truly M — Stories Crafted by Hand"
                 className="h-11 sm:h-12 w-auto object-contain block"
               />

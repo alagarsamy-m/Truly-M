@@ -10,6 +10,7 @@ interface NavbarProps {
 export function Navbar({ onContactClick }: NavbarProps) {
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? '';
 
   useEffect(() => {
     const handleScroll = () => {
@@ -36,7 +37,7 @@ export function Navbar({ onContactClick }: NavbarProps) {
         >
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="/images/logo.svg"
+            src={`${basePath}/images/logo.svg`}
             alt="Truly M — Stories Crafted by Hand"
             className="h-11 sm:h-12 w-auto object-contain block transition-transform duration-300 group-hover:scale-[1.02]"
           />

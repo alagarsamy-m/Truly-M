@@ -22,16 +22,19 @@ export function TextileVisual({
   customImageUrl,
 }: TextileVisualProps) {
   const [imageError, setImageError] = useState(false);
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? '';
 
   // If a custom uploaded image exists or a valid imageUrl exists and hasn't errored
   const activeImage = customImageUrl || imageUrl;
+  const resolvedImage =
+    activeImage && activeImage.startsWith('/') ? `${basePath}${activeImage}` : activeImage;
 
-  if (activeImage && !imageError) {
+  if (resolvedImage && !imageError) {
     return (
       <div className={`relative w-full h-full overflow-hidden bg-[#F2EDE4] ${className}`}>
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
-          src={activeImage}
+          src={resolvedImage}
           alt={title}
           onError={() => setImageError(true)}
           className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
